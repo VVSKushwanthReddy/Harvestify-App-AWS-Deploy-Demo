@@ -1,0 +1,33 @@
+Hravestify deploy it on EC2 instance
+
+
+Ec2 instance----
+ip adress:
+username:ubuntu
+
+purrty gen== convert pem to ppk file
+
+WINSCP = TO MOVE FILE FROM LOCAL TO Ec2 instance
+----------app.py
+if __name__ == '__main__':
+    app.run(host='0.0.0.0',port=8080)
+
+----ubuntu@ip adress cmd:
+below steps
+1.python3 -ctrl+d
+1.sudo apt-get update
+2.sudo apt install python3-pip
+3.python3 app.py
+
+sudo apt install python3-flask
+
+-------Ec2 instance----create security group
+Fullaccess
+source --anywhere
+
+--------
+Connect to your instance using its Public DNS:
+
+ ec2-34-246-178-189.eu-west-1.compute.amazonaws.com:8080
+ 
+ 
